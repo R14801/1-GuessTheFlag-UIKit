@@ -1,24 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Guess_The_Flag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Da-MP-icO">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="ZGu-Uw-liv"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRm-Va-axn">
+                                <rect key="frame" x="84.666666666666686" y="133" width="224" height="114"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="estonia"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jTT-Hk-ROk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TR-gR-4Ri">
+                                <rect key="frame" x="84.666666666666686" y="277" width="224" height="114"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="estonia"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wRw-Hg-r4Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Am7-zS-LLr">
+                                <rect key="frame" x="84.666666666666686" y="421" width="224" height="114"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="estonia"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MiY-v9-n8t"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Da-MP-icO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F1R-1N-Suj"/>
+                            <constraint firstItem="3TR-gR-4Ri" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FI3-W5-jT1"/>
+                            <constraint firstItem="tRm-Va-axn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ro4-cS-JaU"/>
+                            <constraint firstItem="3TR-gR-4Ri" firstAttribute="top" secondItem="tRm-Va-axn" secondAttribute="bottom" constant="30" id="jm8-zY-0US"/>
+                            <constraint firstItem="5Da-MP-icO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jtb-Me-Geg"/>
+                            <constraint firstItem="Am7-zS-LLr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pe0-hj-Y7C"/>
+                            <constraint firstItem="tRm-Va-axn" firstAttribute="top" secondItem="5Da-MP-icO" secondAttribute="bottom" constant="30" id="tS5-Tb-ab7"/>
+                            <constraint firstItem="5Da-MP-icO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ty7-dW-gMl"/>
+                            <constraint firstItem="Am7-zS-LLr" firstAttribute="top" secondItem="3TR-gR-4Ri" secondAttribute="bottom" constant="30" id="xtJ-j1-dSi"/>
+                            <constraint firstItem="5Da-MP-icO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xyl-wb-wjc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="tRm-Va-axn" id="YGf-sF-G7j"/>
+                        <outlet property="button2" destination="3TR-gR-4Ri" id="WUh-nK-QVd"/>
+                        <outlet property="button3" destination="Am7-zS-LLr" id="Bc8-XP-dhH"/>
+                        <outlet property="navBar" destination="5Da-MP-icO" id="KmI-1T-s05"/>
+                        <outlet property="navTitle" destination="ZGu-Uw-liv" id="E9H-KO-I6t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="estonia" width="200" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
