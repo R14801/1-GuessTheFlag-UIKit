@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         var randomCountry = countries.randomElement()
         let buttons = [button1, button2, button3]
         
-        button1.setImage(UIImage(named: randomCountry ?? "estonia"), for: .normal)
+        button1.setImage(UIImage(named: randomCountry ?? ""), for: .normal)
         button1.setTitle("", for: .normal)
         print("1. Part I - \(randomCountry!)")
         repeat {
@@ -82,7 +82,7 @@ class ViewController: UIViewController {
     func clearFlags() {
         let buttons = [button1, button2, button3]
         for item in buttons {
-            item?.setImage(UIImage(named: "estonia"), for: .normal)
+            item?.setImage(nil, for: .normal)
             item?.setTitle("", for: .normal)
         }
     }
