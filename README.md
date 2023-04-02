@@ -1,4 +1,4 @@
-# 1-GuessTheFlag-UIKit
+# 1. Guess The Flag (UIKit)
 A country guessing game created using UIKit
 
 Notable Skills Learned: Arrays, Sets, Randomizing Access.
